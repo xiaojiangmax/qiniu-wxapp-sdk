@@ -220,7 +220,7 @@ function getQiniuToken(callback: () => void) {
 
 
 function uploadURLFromRegionCode(code: RegionCode): string | null {
-    let uploadURL = null;
+    let uploadURL: null | string = null;
     switch (code) {
         case 'ECN':
             uploadURL = 'https://up.qiniup.com';
